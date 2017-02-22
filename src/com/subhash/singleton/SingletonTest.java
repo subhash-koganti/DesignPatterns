@@ -8,14 +8,13 @@ public class SingletonTest {
 		
 		
 		for(int i=0;i<20;i++){
-			Thread t = new Thread(()->
+			new Thread(()->
 			{  
 				DBConnection dbConn = DBConnection.getInstance();
 //				System.out.println("The Counter is " + dbConn.getCounter());
 				System.out.println("The Object id is " + System.identityHashCode(dbConn) + " And Counter is "+ dbConn.getCounter());
 				
-			});
-			t.start();
+			}).start();
 		}
 	}
 	
