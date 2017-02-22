@@ -1,4 +1,4 @@
-package com.subhash.factory;
+package com.subhash.creational.factory;
 
 public class Dog extends Animal{
 

@@ -1,4 +1,4 @@
-package com.subhash.singleton;
+package com.subhash.creational.singleton;
 
 public class DBConnection {
 
